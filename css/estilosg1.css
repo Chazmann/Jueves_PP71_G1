@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
     /* font-family: 'Roboto', sans-serif; */
 }
 
@@ -43,7 +44,7 @@ footer {
 }
 
 .contenedor {
-    height: 800px;
+    
     width: 80%;
     margin: auto;
     /* margin-bottom: 60px; */
@@ -104,4 +105,38 @@ footer {
 .tarjeta p {
     line-height: 18pt;
     margin-top: 10px;
+}
+
+
+
+/* ACÁ VAN A ESTAR LAS PROPIEDADES PARA QUE SE VEA LINDO EN EL CELU */
+@media screen and (max-width:992px) {
+
+    .fila .tarjeta{
+        width: 100%;
+    }
+
+    .flex{
+        flex-direction: column;
+        gap:20px;    }
+    header{
+        background: #C850C0;
+        font-size: 8pt;
+    }
+}
+@media screen and (max-width:792px) {
+
+  
+    header{
+        background: #c8c850;
+        font-size: 8pt;
+    }
+}
+@media screen and (max-width:492px) {
+
+  
+    header{
+        background: #50c864;
+        font-size: 88pt;
+    }
 }
