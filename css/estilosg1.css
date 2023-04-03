@@ -131,7 +131,8 @@ footer {
 
   
     header{
-        background: #c8c850;
+        background: #000000;
+        color: white;
         font-size: 8pt;
     }
     .contenedor{
