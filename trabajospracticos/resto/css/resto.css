@@ -7,6 +7,30 @@
 
 }
 
+/*CONTENEDOR SCROLLBAR*/
+::-webkit-scrollbar {
+    height: 5px; /* scroll horizontal*/
+    width: 5px; /*scroll vertical*/
+    border-radius: 5px;
+}
+
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {
+    background: rgb(109, 223, 185);
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(84, 171, 142);;
+}
+
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
@@ -54,7 +78,7 @@
     align-items: center;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.339);
     border-radius: 10px;
-    overflow: hidden;
+ 
 }
 
 .busqueda .icono {
@@ -63,7 +87,7 @@
     background-color: rgb(108, 217, 181);
     text-align: center;
     line-height: 60px;
-    font-size: 26pt!important;
+    font-size: 26pt !important;
 
 }
 
@@ -75,8 +99,8 @@
     padding: 14px;
 }
 
-.busqueda input[type="search"]:focus{
-    outline: 0; 
+.busqueda input[type="search"]:focus {
+    outline: solid 5px rgb(55, 255, 0);
     font-size: 14pt;
 
 
@@ -91,10 +115,48 @@
     width: 60px;
     background-color: transparent;
     border: 0;
-    font-size: 26pt!important;
+    font-size: 26pt !important;
 }
-.busqueda input[type="submit"]:active {
-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.208);
-font-size: 22pt!important;
 
+.busqueda input[type="submit"]:active {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.208);
+    font-size: 22pt !important;
+
+}
+
+.categorias {
+    margin-top: 30px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.categorias ul{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap:10px;
+    overflow-x:scroll;
+}
+
+.categorias ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 0 0 120px;
+    height: 60px;
+    gap: 10px;
+    font-family:'Roboto', sans-serif;
+     
+}
+.med{
+    font-size: 28pt!important;
+}
+.categorias ul li:not(:hover){
+    color: gray;
+    transform: scale(0.8);
 }
