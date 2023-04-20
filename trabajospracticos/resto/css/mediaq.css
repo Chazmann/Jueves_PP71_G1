@@ -1,0 +1,7 @@
+@media screen and (max-width:792px) {
+
+    .listaresto{
+        flex-direction: column;
+    }
+    
+}
