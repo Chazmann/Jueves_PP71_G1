@@ -7,15 +7,17 @@
 
 }
 
-.gristx{
+.gristx {
     color: gray;
 }
 
 
 /*CONTENEDOR SCROLLBAR*/
 ::-webkit-scrollbar {
-    height: 5px; /* scroll horizontal*/
-    width: 5px; /*scroll vertical*/
+    height: 5px;
+    /* scroll horizontal*/
+    width: 5px;
+    /*scroll vertical*/
     border-radius: 5px;
 }
 
@@ -33,7 +35,8 @@
 
 /* SELECTOR hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(84, 171, 142);;
+    background: rgb(84, 171, 142);
+    ;
 }
 
 .roboto {
@@ -83,7 +86,7 @@
     align-items: center;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.339);
     border-radius: 10px;
- 
+
 }
 
 .busqueda .icono {
@@ -129,87 +132,99 @@
 
 }
 
-.categorias {
+.categorias,
+.inforesto {
     margin-top: 30px;
     height: 110px;
     display: flex;
     align-items: center;
 }
 
-.categorias ul{
-    
+.categorias ul,
+.inforesto ul {
+
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    gap:10px;
-    overflow-x:scroll;
+    gap: 10px;
+    overflow-x: scroll;
 }
 
-.categorias ul li{
+.inforesto ul {
+    justify-content: space-evenly!important;
+    overflow-x: hidden;
+}
+.categorias ul li, .inforesto ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
     flex: 0 0 120px;
     height: 60px;
     gap: 10px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
 
-         
+.med {
+    font-size: 28pt !important;
 }
-.med{
-    font-size: 28pt!important;
+.large {
+    font-size: 36pt !important;
 }
-.categorias ul li:not(:hover){
+
+.categorias ul li:not(:hover) {
     color: gray;
     transform: scale(0.8);
     filter: blur(1px);
 }
-.categorias ul li:hover{
+
+.categorias ul li:hover {
     color: rgb(0, 0, 0);
- 
- 
+
+
 }
 
 
-.productos{
+.productos {
     padding: 20px;
 }
 
-.listaresto{
-    padding:30px;
+.listaresto {
+    padding: 30px;
     display: flex;
-    gap:20px;
+    gap: 20px;
     flex-wrap: wrap;
 
 
 }
 
-.resto{
+.resto {
     display: flex;
-    height: 200px!important;
+    height: 200px !important;
     flex: 0 0 49%;
-   
+
     box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.256);
     border-radius: 15px;
-    
+
 }
-.resto .imgresto{
+
+.resto .imgresto {
     height: 200px;
     width: 40%;
     overflow: hidden;
-   
+
 }
-.resto img{
+
+.resto img {
     object-fit: cover;
     height: 210px;
     width: 100%;
 }
 
 
-.resto .datosresto{
+.resto .datosresto {
     position: relative;
     padding: 25px;
     display: flex;
@@ -218,20 +233,21 @@
     height: 100%;
     width: 60%;
     background-color: rgb(255, 255, 255);
-   
+
 }
-.resto .textos{
+
+.resto .textos {
     line-height: 24pt;
 }
 
 
 
-.valoracion{
+.valoracion {
     display: flex;
     justify-content: space-between;
 }
 
-.rate2{
+.rate2 {
     position: absolute;
     background-color: rgb(1, 201, 134);
     height: 50px;
@@ -241,8 +257,35 @@
     line-height: 50px;
     font-size: 18pt;
     right: -10px;
-    top:-10px;
+    top: -10px;
     border-start-start-radius: 15px;
     border-end-end-radius: 15px;
 }
 
+.nombre{
+    width: 90%;
+    padding-top: 20px;
+    line-height: 40px;
+    margin: auto;
+}
+
+.info{
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+footer{
+position: fixed;
+bottom: 0;
+background-color: aquamarine;
+width: 100%;
+padding: 10px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
